@@ -1,0 +1,21 @@
+:root {
+    --color-back: rgba(48, 78, 58, 1);
+    --color-front: rgba(48, 78, 58, 0.8);
+}
+*{ box-sizing: border-box; }
+
+html {
+    height: 100%;
+    margin: 0;
+    
+    background-image: url(./texture-green.jpg);
+    background-color: var(--color-back);
+    background-size: 500px;
+    background-attachment: fixed;
+}
+
+body {
+    height: 100%;
+    margin: 0px;
+    background-color: var(--color-front);
+}
