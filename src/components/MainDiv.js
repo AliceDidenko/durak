@@ -7,6 +7,7 @@ function MainDiv() {
     return (
         <div className="main-field">
             <FieldTop/>
+            <div>npm add jquery</div>
             <FieldBottom/>
         </div>
     )
