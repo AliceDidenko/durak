@@ -1,6 +1,5 @@
 import React from 'react'
 import Field from './Field'
-import style from './Style-fields.css'
 
 export default function Fields( {users} ) {
     const userElements = users.map(

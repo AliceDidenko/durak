@@ -1,8 +1,20 @@
 :root {
     --color-back: rgba(48, 78, 58, 1);
     --color-front: rgba(48, 78, 58, 0.8);
+    --color-button-background: rgba(75, 134, 95, 0.8);
+    --color-button-scr: rgba(75, 134, 95, 0.8);
+    --color-button-scr-border: rgba(170, 245, 195, 0.5);
+
+    --color-users: rgba(170, 245, 195, 0.246);
+
+    --color-text: rgba(170, 245, 195, 0.8);
 }
-*{ box-sizing: border-box; }
+*{ 
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    letter-spacing: .1rem;
+}
 
 html {
     height: 100%;
@@ -19,3 +31,33 @@ body {
     margin: 0px;
     background-color: var(--color-front);
 }
+
+.main-field {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.field-user {
+    background-color: var(--color-front);
+    width: 200px;                         /* сделать настраеваемым */
+}
+
+.field-top, .field-bottom { 
+    display: flex;
+    justify-content: space-around;
+}
+.field-user {
+    display: none;
+}
+
+#field-1.for2, #field-2.for2,
+#field-1.for3, #field-2.for3, #field-3.for3,
+#field-1.for4, #field-2.for4, #field-3.for4, #field-4.for4,
+#field-1.for5, #field-2.for5, #field-3.for5, #field-4.for5, #field-5.for5,
+#field-1.for6, #field-2.for6, #field-3.for6, #field-4.for6, #field-5.for6, #field-6.for6  {
+    display: flex;
+    justify-content: space-between;
+}
+
+.user-cards { display: flex; align-items: center;}

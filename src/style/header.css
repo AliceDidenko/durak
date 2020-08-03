@@ -1,0 +1,60 @@
+.head { 
+    position: fixed;
+    width: 100%;
+    background-color:  var(--color-front);
+    padding: .5em;
+
+    box-shadow: 0 0 8px 0 rgba(0,0,0,1);
+}
+.text { color: var(--color-text);}
+
+.container, .numberUserInput {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 -5px;
+}
+.in-inline, .inline {
+    margin: auto 5px;
+}
+
+/* for input range */
+input[type=range] {
+    -webkit-appearance: none;
+    cursor: pointer;
+    background-color: var(--color-button-background);
+    border-radius: 50px;
+    box-shadow: 0 0 8px 0 rgba(0,0,0,1);
+}
+
+input[type='range']::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    background-color: var(--color-button-scr);
+    border: 2px solid var(--color-button-scr-border);
+    width: 20px;
+    height: 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 0 8px 0 rgba(0,0,0,1);
+}
+
+input[type=range]:active, #rangeValue:active, input[type=range]:focus, #rangeValue:focus, #gameStatus:focus {
+    outline : none;
+}
+
+#rangeValue {
+    background-color: rgba(0, 128, 0, 0);
+    border: none;
+    width: 1em;
+}
+
+#gameStatus {
+    cursor: pointer;
+    background-color: var(--color-button-background);
+    border: none;
+    border-radius: 50px;
+    box-shadow: 0 0 8px 0 rgba(0,0,0,1);
+}
+
+#gameStatus:active {
+    box-shadow: none;
+}
