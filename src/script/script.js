@@ -7,6 +7,7 @@ $( function(){
   console.log("heightHeader = ", heightHeader);
   $("div.field-top").css('margin-top', heightHeader); // отступ верхних полей игроков от Header
 
+
   $("#gameStatus").click( function(){
     let divsArr = document.getElementsByClassName("field-user");
     let n = document.getElementById("num").value;

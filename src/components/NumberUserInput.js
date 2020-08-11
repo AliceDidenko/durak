@@ -7,7 +7,7 @@ function NumberUserInput() {
         <div className="numberUserInput">
             <div    className="in-inline text">число игроков</div>
             <input  className="in-inline"      id="num"        type="range" min="2" max="6" step="1" onInput={funcValue}/>
-            <input  className="in-inline text" id="rangeValue" type="text"  value="2" readonly/>
+            <input  className="in-inline text" id="rangeValue" type="text"  value="6" readOnly/>
         </div>
     )
 }

@@ -6,7 +6,7 @@
     --color-button-scr-border: rgba(170, 245, 195, 0.5);
 
     --color-users: rgba(170, 245, 195, 0.246);
-
+    --color-avatar-other: rgba(146, 211, 167, 1);
     --color-text: rgba(170, 245, 195, 0.8);
 }
 *{ 
@@ -40,7 +40,9 @@ body {
 }
 .field-user {
     background-color: var(--color-front);
-    width: 200px;                         /* сделать настраеваемым */
+    width: 30vw;
+    /* сделать настраеваемую ширину */
+    height: 120px;
 }
 
 .field-top, .field-bottom { 
@@ -58,6 +60,16 @@ body {
 #field-1.for6, #field-2.for6, #field-3.for6, #field-4.for6, #field-5.for6, #field-6.for6  {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
-.user-cards { display: flex; align-items: center;}
+/*** Large deviced only ***/
+@media (min-width: 992px) {
+}
+/*** Medium deviced only ***/
+@media (min-width: 768px) and (max-width: 991px) {
+}
+
+/*** Small deviced only ***/
+@media (max-width: 767px) {
+}

@@ -1,25 +1,25 @@
 import React from 'react'
+import User from './User'
 
-import styleback from '../style/cadrs/back.png'
+import FieldUser from './FieldUser'
+import "../style/avatar.css"
+import "../style/cards.css"
 
-function FieldTop() {
+function FieldTop({users}) {
     return (
         <div  className="field-top">
-            <div className="field-user" id="field-5">
-                <div class="user-cards"><img src={styleback} width="50" alt="card"/></div>
-                <div class="user-cards"><img src={styleback} width="50" alt="card"/></div>
-                <div class="user-cards"><img src={styleback} width="50" alt="card"/></div>
+            <div className="field-user other-user" id="field-5">
+                
+                <FieldUser  user={users[4]}/>
+                <User user={users[4]}/>
             </div>
-            <div className="field-user" id="field-2">
-                <div class="user-cards"><img src={styleback} width="50" alt="card"/></div>
-                <div class="user-cards"><img src={styleback} width="50" alt="card"/></div>
-                <div class="user-cards"><img src={styleback} width="50" alt="card"/></div>
+            <div className="field-user other-user" id="field-2">
+                <FieldUser  user={users[1]}/>
+                <User user={users[1]}/>
             </div>
-            <div className="field-user" id="field-3">
-                <div class="user-cards"><img src={styleback} width="50" alt="card"/></div>
-                <div class="user-cards"><img src={styleback} width="50" alt="card"/></div>
-                <div class="user-cards"><img src={styleback} width="50" alt="card"/></div>
-                <div class="user-cards"><img src={styleback} width="50" alt="card"/></div>
+            <div className="field-user other-user" id="field-3">
+                <FieldUser  user={users[2]}/>
+                <User user={users[2]}/>
             </div>
         </div>
     )

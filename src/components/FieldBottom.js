@@ -1,28 +1,25 @@
 import React from 'react'
+import User from './User'
 
-import styleback from '../style/cadrs/back.png'
-import style_6_hearts from '../style/cadrs/6_hearts.png'
+import FieldUser from './FieldUser'
+import "../style/avatar.css"
+import "../style/cards.css"
 
-
-function FieldBottom() {
+function FieldBottom({users}) {
     return (
         <div  className="field-bottom">
-            <div className="field-user" id="field-4">
-                <div class="user-cards"><img src={styleback} width="50" alt="card"/></div>
-                <div class="user-cards"><img src={styleback} width="50" alt="card"/></div>
-                <div class="user-cards"><img src={styleback} width="50" alt="card"/></div>
+            <div className="field-user other-user" id="field-4">
+                
+                <FieldUser  user={users[3]}/>
+                <User user={users[3]}/>
             </div>
             <div className="field-user" id="field-1">
-                <div class="user-cards"><img src={style_6_hearts} width="50" alt="card"/></div>
-                <div class="user-cards"><img src={style_6_hearts} width="50" alt="card"/></div>
-                <div class="user-cards"><img src={style_6_hearts} width="50" alt="card"/></div>
-                <div class="user-cards"><img src={style_6_hearts} width="50" alt="card"/></div>
+                <FieldUser  user={users[0]}/>
+                <User user={users[0]}/>
             </div>
-            <div className="field-user" id="field-6">
-                <div class="user-cards"><img src={styleback} width="50" alt="card"/></div>
-                <div class="user-cards"><img src={styleback} width="50" alt="card"/></div>
-                <div class="user-cards"><img src={styleback} width="50" alt="card"/></div>
-                <div class="user-cards"><img src={styleback} width="50" alt="card"/></div>
+            <div className="field-user other-user" id="field-6">
+                <FieldUser  user={users[5]}/>
+                <User user={users[5]}/>
             </div>
         </div>
     )

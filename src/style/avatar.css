@@ -1,0 +1,6 @@
+.avatar {
+    background-color: var(--color-avatar-other);
+    border-radius: 50%;
+    border: 2px solid white;
+    width: 80px;
+}

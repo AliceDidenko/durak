@@ -1,0 +1,39 @@
+.user-cards, .fieldUser { 
+    display: flex; 
+    align-items: center;
+    min-width: 10px;
+}
+.imgCards { 
+    height: 80px;
+    width: 55px;
+    border: 2px solid rgba(0, 0, 0, 0.8);
+    border-radius: 7%;
+}
+
+/* переворот карточек */
+.wrap {
+    position: absolute;
+}
+.card-3d { 
+    position: relative;
+    perspective: 1500px;
+}
+.front, .back {
+    position: absolute;
+    height: 80px;
+    width: 55px;
+    transition: .5s;
+    backface-visibility: hidden;
+}
+.front { 
+    background: url('../style/cards/card_7_hearts.png') no-repeat;
+    background-size: contain;
+    transform: rotateY(180deg);
+}
+.back { 
+    background: url('../style/cards/back.png') no-repeat;
+    background-size: contain;
+    
+}
+.card-3d:hover .front { transform: rotateY(360deg);}
+.card-3d:hover .back { transform: rotateY(180deg);}
